@@ -5,7 +5,6 @@ import {Button} from '../components/button'
 const navLinks = [
     {href: '#about', label: 'About'},
     {href: '#projects', label: 'Projects'},
-    {href: '#contacts', label: 'Contacts'},
     {href: '#experience', label: 'Experience'}
 ]
 
@@ -19,7 +18,7 @@ export const Navbar = () => {
         <header className="fixed top-0 left-0 right-0 bg-transparent py-5 z-50">
             <nav className ='container mx-auto flex items-center justify-between'>
                 <a href='#' className = 'text-xl font-bold tracking-tight hover:text-primary'>
-                    PM<span className="text-primary">.</span>
+                    Made with React<span className="text-primary">.</span>
                 </a>
 
                 {/* Desktop Nav */}
@@ -35,9 +34,11 @@ export const Navbar = () => {
                 </div>
                 {/* CTA Button */}
                 <div className='hidden md:flex items-center gap-1'>
-                    <Button size='sm'>
-                        contact me
-                    </Button>
+                    <a href='#contacts'>
+                        <Button size='sm'>
+                            contact me
+                        </Button>
+                    </a>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -60,9 +61,11 @@ export const Navbar = () => {
                         ))}
 
                         {/* CTA Button */}
-                        <Button size='sm'>
-                            contact me
-                        </Button>
+                        <a href='#contacts' onClick={() => setIsMobileMenuOpen(false)}>
+                            <Button size='sm'>
+                                contact me
+                            </Button>
+                        </a>
                     </div>
                 </div>
                 )}

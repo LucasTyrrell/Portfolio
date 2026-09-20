@@ -1,26 +1,28 @@
 @import 'tailwindcss';
 
 @theme {
-  --color--background: #1f1912;
+  --color--background: #1a1f24;
   --color--foreground: #f0e6d2;
 
-  --color-card: #2a2118;
+  --color-card: #222830;
 
-  --color-primary: #c9a94c;
-  --color-primary-foreground: #1f1912;
+  --color-primary: #dfb160;
+  --color-primary-foreground: #1a1f24;
 
-  --color-secondary: #8a7a63;
+  --color-secondary: #34586e;
   --color-secondary-foreground: #f0e6d2;
 
-  --color-muted: #c4b8a5;
-  --color-muted-foreground: #1f1912;
+  --color-muted: #4a5568;
+  --color-muted-foreground: #f0e6d2;
 
-  --color-border: #3a2f22;
+  --color-border: #2d3748;
+
+  --color-dark-grey: #2d3748;
 
   --radius: 0.75rem;
 
-  --color-highlight: #c2571f;
-  --color-surface: #2a2118;
+  --color-highlight: #34586e;
+  --color-surface: #222830;
 }
 
 @layer base {
@@ -57,7 +59,7 @@
   @keyframes fade-in {
     from {
       opacity: 0;
-      ransform: translateY(20px);
+      transform: translateY(20px);
       filter: blur(10px)
     }
     to {
@@ -69,6 +71,4 @@
   .animate-fade-in {
     animation: fade-in 0.8s ease-out both;
   }
-
-  
 }

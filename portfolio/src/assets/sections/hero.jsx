@@ -11,21 +11,21 @@ export const Hero = () => {
         <div className='container mx-auto relative z-10 px-6 pt-32 pb-20 relative z-10'>
             <div className ='grid lg:grid-cols-2 gap-12 items-center'>
                 {/* Left Column */}
-                <div className='space-y-8'>
-                    <div className='animate-fade-in'>
-                        <span className='inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary'>
-                            <span className='w-2 h-2 bg-primary rounded-full'></span>
-                            Newcastle University Student
-                        </span>
+                <div className ='flex flex-col gap-6 rounded-full color-background/20 p-6'>
+                    <div>
+
                     </div>
                 </div>
                 {/* Right Column */}
+                
             </div>
 
         {/* Headline */}
+        <div>
             <h1>
-                
+
             </h1>
+        </div>
         </div>
     </section>;
 };
