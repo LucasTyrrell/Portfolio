@@ -5,7 +5,7 @@ const modules = [
     {
         module_code: "CSC3831",
 
-        module_name: "Computer Vison, AI and Machine Learning"
+        module_name: "Computer Vision, AI and Machine Learning"
     
     }, 
     {
@@ -81,7 +81,7 @@ const prev_work = [
 
         duration: "July 2026 - September 2026",
 
-        description: "Customer facing roll in a high-pressure environment, developed strong time management and team communication "
+        description: "Customer-facing role in a high-pressure environment, developed strong time management and team communication "
 
     },
     {
@@ -91,7 +91,7 @@ const prev_work = [
 
         duration: "June 2025 - September 2026",
 
-        description: "Assisted tradesman with project completion under tight deadlines whilst balancing efficiency and quality. Maintained accurate site logs and records to support project tracking and complience"
+        description: "Assisted tradesmen with project completion under tight deadlines whilst balancing efficiency and quality. Maintained accurate site logs and records to support project tracking and compliance"
     },
     {   title: "Retail Assistant",
 
@@ -99,7 +99,7 @@ const prev_work = [
 
         duration: "May 2023 - July 2024",
 
-        description: "Customer facing role, maintainging accurate stock records and insured data integrity across inventory systems both physical and digital"
+        description: "Customer-facing role, maintaining accurate stock records and ensured data integrity across inventory systems both physical and digital"
     },
     {
         title: "Warehouse Operative",
@@ -108,7 +108,7 @@ const prev_work = [
 
         duration: "October 2022 - April 2023",
 
-        description: "Adapted to changing daily requirements and prioritised tasks effectivly under high workload"
+        description: "Adapted to changing daily requirements and prioritised tasks effectively under high workload"
 
     }
 ]
@@ -118,14 +118,13 @@ export const Experience = () => {
 
     const [isSubjectMenuOpen, setIsSubjectMenuOpen] = useState(false);
 
-    return <section id="experience" className="py-36 relativbe overflow-hidden">
+    return <section id="experience" className="py-36 relative overflow-hidden">
             <div className="container mx-auto ">
                 <div className="flex justify-center py-10 font-bold text-lg text-primary">EXPERIENCE</div>
                 <div className="flex flex-col md:flex-row gap-8">
                     {/* Education */}
                     <div className="glass rounded-3xl w-full py-8 px-8 border border-border/50">
                         <div className="flex items-center gap-3 mb-6">
-                            <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                             <h1 className="text-sm font-semibold tracking-widest text-secondary-foreground uppercase">Education</h1>
                         </div>
 
@@ -176,7 +175,6 @@ export const Experience = () => {
                     </div>
                     <div className="glass rounded-3xl w-full py-8 px-8 border border-border/50">
                         <div className="flex items-center gap-3 mb-6">
-                            <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                             <h2 className="text-sm font-semibold tracking-widest text-secondary-foreground uppercase">Work Experience</h2>
                         </div>
                         <div className="grid grid-cols-1 gap-3">

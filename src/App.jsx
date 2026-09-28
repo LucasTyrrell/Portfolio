@@ -1,5 +1,4 @@
 import { Navbar } from "./assets/layout/navbar"
-import { About } from "./assets/sections/about"
 import { Hero } from "./assets/sections/hero"
 import { Contacts } from "./assets/sections/contacts"
 import { Projects } from "./assets/sections/projects"
@@ -11,7 +10,6 @@ function App() {
     <Navbar />
     <main>
       <Hero />
-      <About />
       <Experience />
       <Projects />
       <Contacts />

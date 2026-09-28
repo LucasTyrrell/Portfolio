@@ -1,6 +1,7 @@
 import { Mail, Phone, MapPin, Send } from "lucide-react"
 import { Button } from "../components/button"
 import { useState } from "react"
+import emailjs from "@emailjs/browser"
 
 const contactInfo = [
     {
@@ -30,10 +31,43 @@ export const Contacts = () => {
         message: ""
     })
 
+    const [isLoading, setIsLoading] = useState(false);
+
+    const [submitStatus, setSubmitStatus] = useState(null);
+
     const handleSubmit = async (e) => {
         e.preventDefault();
-    }
+        setIsLoading(true);
+        setSubmitStatus(null);
+        try{
+            const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+            const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+            const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
+            await emailjs.send(serviceId, templateId, {
+                name: formData.name,
+                email: formData.email,
+                message: formData.message,
+            }, publicKey);
+
+            setSubmitStatus({
+                type: "success",
+                message: "Message sent successfully"
+            })
+
+            setFormData({name: "", email: "", message: ""});
+        } catch (err) {
+            setSubmitStatus({
+                type: "error",
+                message: err.text || "Something went wrong, please try again",
+            });
+
+        } finally {
+            setIsLoading(false);
+        }
+    };
+
+    
 
     return (
         <section id="contacts" className="py-32 relative overflow-hidden">
@@ -58,7 +92,7 @@ export const Contacts = () => {
             {/* Contact box - centred on page, text left-aligned inside */}
             <div className="flex justify-center relative z-10 px-6">
                 <div className="glass p-8 rounded-3xl border border-primary/50 animate-fade-in w-full max-w-xl text-left">
-                    <form className="space-y-6">
+                    <form className="space-y-6" onSubmit={handleSubmit}>
                         <div>
                             <label htmlFor="name" className="block text-sm font-medium mb-2">
                                 Name
@@ -107,10 +141,16 @@ export const Contacts = () => {
                             className="w-full px-4 py-2 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none resize-none" />
                         </div>
 
-                        <Button type="submit" size="lg">
-                            Send Message
-                            <Send size-={16} />
+                        <Button type="submit" size="lg" disabled={isLoading}>
+                            {isLoading ? "Sending..." : "Send Message"}
+                            <Send size={16} />
                         </Button>
+
+                        {submitStatus && (
+                            <p className={`text-sm ${submitStatus.type === "success" ? "text-primary" : "text-red-400"}`}>
+                                {submitStatus.message}
+                            </p>
+                        )}
                     </form>
                 </div>
             </div>

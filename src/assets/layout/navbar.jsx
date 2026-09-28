@@ -3,9 +3,8 @@ import { Menu, X} from 'lucide-react'
 import {Button} from '../components/button'
 
 const navLinks = [
-    {href: '#about', label: 'About'},
-    {href: '#projects', label: 'Projects'},
-    {href: '#experience', label: 'Experience'}
+    {href: '#experience', label: 'Experience'},
+    {href: '#projects', label: 'Projects'}
 ]
 
 

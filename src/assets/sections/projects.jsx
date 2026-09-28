@@ -5,18 +5,18 @@ const projects = [
     {
         title: "Up To Date - AI powered job platform",
 
-        description: "An up-to-date job listing platform that allows the user to search through real job listing and track their current applications",
+        description: "An up-to-date job listing platform that allows the user to search through real job listings and track their current applications",
 
-        tags: ["Python", "LangGraph", "Patchright", "PostgesSQL", "SQLAlchemy"],
+        tags: ["Python", "LangGraph", "Patchright", "PostgreSQL", "SQLAlchemy"],
 
         github: "https://github.com/LucasTyrrell/Up_To_Date"
     },
     {
         title: "Get healthy together - Full Stack fitness tracker",
 
-        description: "Contributed to a team to develop a full stack fitness tracker, calling real data from the fitbit API. Unfortunately had to be made private in accordance with University policy ",
+        description: "Contributed to a team to develop a full stack fitness tracker, calling real data from the Fitbit API. Unfortunately had to be made private in accordance with University policy ",
 
-        tags: ["Java", "SpringBoot", "RestAPI", "React", "PostgresSQL", "Docker", "FitbitAPI"],
+        tags: ["Java", "Spring Boot", "REST API", "React", "PostgreSQL", "Docker", "Fitbit API"],
 
         github: "made private in accordance with university policy"
     }, 
@@ -39,7 +39,7 @@ export const Projects = () => {
         setActiveIdx((prev) => (prev + 1) % projects.length);
     }
 
-    const previouseProject  = () => {
+    const previousProject  = () => {
             setActiveIdx((prev) => (prev - 1 + projects.length) % projects.length)
     }
 
@@ -79,7 +79,7 @@ export const Projects = () => {
                     </div>
                     {/* scroller */}
                     <div className="flex items-center justify-center gap-4 mt-8">
-                        <button onClick={previouseProject} className="p-3 rounded-full glass border border-border/50 hover:bg-primary/10 hover:text-primary transition-all">
+                        <button onClick={previousProject} className="p-3 rounded-full glass border border-border/50 hover:bg-primary/10 hover:text-primary transition-all">
                             <ChevronLeft/>
                         </button>
 
