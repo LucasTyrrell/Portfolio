@@ -25,17 +25,10 @@ export const Hero = () => {
             <div className ='grid lg:grid-cols-2 gap-12 items-center'>
                 {/* Left Column */}
                 <div className ='space-y-8'>
-                    <div className="animate-fade-in">
-                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
-
-                             Newcastle University Computer Science Student
-
-                        </span>
-                    </div>
 
                     <div className="space-y-4">
                         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold animate-fade-in animation-delay-100">
-                        <span className="text-primary glow-text">AMBITIOUS, CURIOUS AND EAGER TO LEARN</span>
+                        <span className="text-primary glow-text">Lucas Tyrrell, Computer Science Student at Newcastle University</span>
                         
                         </h1>
                         <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-300">

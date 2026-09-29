@@ -17,7 +17,7 @@ export const Navbar = () => {
         <header className="fixed top-0 left-0 right-0 bg-transparent py-5 z-50">
             <nav className ='container mx-auto flex items-center justify-between'>
                 <a href='#' className = 'text-xl font-bold tracking-tight hover:text-primary'>
-                    Made with React<span className="text-primary">.</span>
+                    Lucas Tyrrell<span className="text-primary">.</span>
                 </a>
 
                 {/* Desktop Nav */}

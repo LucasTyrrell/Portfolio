@@ -89,7 +89,7 @@ const prev_work = [
 
         company: "M&S Hughes contractors, Hemsworth",
 
-        duration: "June 2025 - September 2026",
+        duration: "June 2025 - September 2025",
 
         description: "Assisted tradesmen with project completion under tight deadlines whilst balancing efficiency and quality. Maintained accurate site logs and records to support project tracking and compliance"
     },

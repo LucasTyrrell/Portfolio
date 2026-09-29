@@ -14,11 +14,11 @@ const projects = [
     {
         title: "Get healthy together - Full Stack fitness tracker",
 
-        description: "Contributed to a team to develop a full stack fitness tracker, calling real data from the Fitbit API. Unfortunately had to be made private in accordance with University policy ",
+        description: "Contributed to a team to develop a full stack fitness tracker, calling real data from the Fitbit API. Unfortunately repository had to be made private in accordance with University policy ",
 
         tags: ["Java", "Spring Boot", "REST API", "React", "PostgreSQL", "Docker", "Fitbit API"],
 
-        github: "made private in accordance with university policy"
+        github: "https://github.com/newcastleuniversity-computing/CSC2033_Team-43_Backend_25-26"
     }, 
     {
         title: "Voice Activated Chatbot",
